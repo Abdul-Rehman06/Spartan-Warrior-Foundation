@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .glass-card {
+    @apply bg-glass-gradient backdrop-blur-xl border border-gray-200 shadow-premium;
+  }
+  .glass-panel {
+    @apply bg-white/70 backdrop-blur-lg border border-gray-100 shadow-sm;
+  }
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-800;
+  }
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-yellow-600;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
