@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, Phone, MapPin, Globe, MessageSquare, HandHeart, Briefcase, GraduationCap, Users, Megaphone, HelpCircle, Send, AlertCircle, Clock, Landmark } from 'lucide-react';
+import { ArrowRight, Mail, Phone, MapPin, Globe, MessageSquare, HandHeart, Briefcase, GraduationCap, Users, Megaphone, HelpCircle, Send, AlertCircle, Clock, Landmark, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const fadeIn = {
