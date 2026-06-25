@@ -11,6 +11,7 @@ import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import SponsorMatch from './pages/SponsorMatch';
+import Apply from './pages/Apply';
 import FAQ from './pages/FAQ';
 
 function App() {
@@ -24,12 +25,13 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/programs" element={<Programs />} />
             <Route path="/impact" element={<Impact />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/sponsor-match" element={<SponsorMatch />} />
-            <Route path="/faq" element={<FAQ />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/sponsor-match" element={<SponsorMatch />} />
+          <Route path="/apply" element={<Apply />} />
+          <Route path="/faq" element={<FAQ />} />
           </Routes>
         </main>
         <Footer />
