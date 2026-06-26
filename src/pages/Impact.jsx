@@ -124,6 +124,30 @@ const Impact = () => {
       <section className="py-24 px-4 md:px-8 bg-gray-50 border-y border-gray-200">
         <div className="max-w-6xl mx-auto space-y-24">
             
+            {/* Impact Starts With Access */}
+            <motion.div 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeIn}
+                className="bg-white border border-gray-200 rounded-[2.5rem] p-8 md:p-16 text-center shadow-sm"
+            >
+                <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">Impact Starts With Access</h2>
+                <p className="text-lg text-primary/80 mb-6">At Spartan Warrior Foundation, impact is not only measured by money raised.</p>
+                <p className="text-xl font-bold text-accent mb-8">Impact is measured by access created.</p>
+                
+                <ul className="space-y-4 text-left max-w-3xl mx-auto mb-10">
+                    <li className="flex items-start"><ArrowRight className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">It is measured by people receiving education they may not have been able to afford.</span></li>
+                    <li className="flex items-start"><ArrowRight className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">It is measured by people learning how to better understand their financial profile.</span></li>
+                    <li className="flex items-start"><ArrowRight className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">It is measured by participants becoming more aware, more organized, and more prepared to make informed decisions.</span></li>
+                </ul>
+                
+                <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10 inline-block">
+                    <p className="font-bold text-primary mb-2">We do not measure success by guaranteed outcomes.</p>
+                    <p className="font-bold text-accent">We measure success by education, access, participation, and action.</p>
+                </div>
+            </motion.div>
+
             {/* How Donations Are Used */}
             <motion.div 
                 initial="hidden"

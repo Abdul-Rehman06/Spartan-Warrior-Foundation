@@ -266,24 +266,24 @@ const HeroContent = () => {
               {/* Left Content (Text & Buttons) */}
               <div className="text-left space-y-8 pointer-events-auto">
                   <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary tracking-tight leading-tight">
-                      Helping People Take Ownership of Their <span className="text-accent">Financial Future</span>
+                      We Are Not Here to Carry People. <span className="text-accent">We Are Here to Equip Them.</span>
                   </h1>
                   
                   <div className="text-lg md:text-xl text-primary/80 font-medium leading-relaxed space-y-4 max-w-xl">
-                      <p>Spartan Warrior Foundation provides financial literacy education, credit education resources, classroom access, and tools for individuals who are ready to learn, show up, and do the work for themselves.</p>
+                      <p>Spartan Warrior Foundation gives individuals access to financial literacy education, credit education resources, classroom-style learning, and tools so they can learn how to take ownership of their financial future.</p>
                       <p className="text-red-600 font-bold">We do not fix credit. We do not do the work for people.</p>
-                      <p>We provide the tools, the education, and the structure so people can learn how to move forward with confidence.</p>
+                      <p>We provide the tools, the classroom, and the structure. <strong className="text-accent">The person must show up, learn, and take action.</strong></p>
                   </div>
 
                   <div className="pt-6 flex flex-col sm:flex-row gap-4">
-                      <Link to="/donate" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-full font-bold tracking-wide overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-premium">
-                          <span className="relative z-10 text-lg">Donate Now</span>
+                      <Link to="/about" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-full font-bold tracking-wide overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-premium">
+                          <span className="relative z-10 text-lg">Learn the Mission</span>
                           <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
                           <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
                       </Link>
-                      <Link to="/programs" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary border border-gray-200 rounded-full font-bold tracking-wide hover:bg-gray-50 transition-all hover:shadow-premium">
+                      <Link to="/apply" className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-primary border border-gray-200 rounded-full font-bold tracking-wide hover:bg-gray-50 transition-all hover:shadow-premium">
                           <PlayCircle className="w-5 h-5 text-accent" />
-                          <span className="text-lg">Learn How It Works</span>
+                          <span className="text-lg">Apply for Access</span>
                       </Link>
                   </div>
               </div>

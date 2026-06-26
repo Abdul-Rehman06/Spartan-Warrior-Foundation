@@ -35,14 +35,15 @@ const About = () => {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-              Built to Give People the Tools, Education, and Structure to <span className="text-accent">Take Ownership</span>
+              Built to Equip People, <span className="text-accent">Not Carry Them</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-8">
-              Spartan Warrior Foundation was created to help individuals gain access to financial literacy education, credit education resources, classroom-style learning, and tools that can help them better understand their financial profile.
+              Spartan Warrior Foundation was created to give people access to financial literacy education, credit education resources, classroom-style learning, and tools so they can better understand their financial profile and take ownership of their next step.
             </p>
-            <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-2xl text-white font-medium text-lg">
-              <span className="block text-accent font-bold mb-1">We are not here to carry people.</span>
-              We are here to equip them.
+            <div className="inline-block bg-white/10 backdrop-blur-md border border-white/20 px-8 py-4 rounded-2xl text-white font-medium text-lg text-left md:text-center">
+              <p className="text-red-400 font-bold mb-2">We are not a credit repair company. We are not here to do the work for people.</p>
+              <p className="mb-2">We are here to provide the classroom, the tools, the education, and the structure.</p>
+              <p className="text-accent font-bold">The participant must show up and take action.</p>
             </div>
           </motion.div>
         </div>
@@ -60,23 +61,22 @@ const About = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8 text-center">About Spartan Warrior Foundation</h2>
             
-            <p>Spartan Warrior Foundation is an education-focused nonprofit organization built to help people who want to better understand their financial life but may not have access to the right tools, education, or structure on their own.</p>
+            <p>Spartan Warrior Foundation is an education-focused nonprofit organization built to help individuals who want to learn but may not have access to the right tools, education, or structure on their own.</p>
             
-            <p>Too many people are told to fix their finances, fix their credit, make better decisions, or get their life together without ever being taught how the financial system actually works.</p>
+            <p>Too many people are told to fix their finances without ever being taught how the financial system works.</p>
             
             <ul className="space-y-4 my-8 pl-4 border-l-4 border-accent bg-gray-50 p-6 rounded-r-xl">
-                <li className="flex items-start"><AlertCircle className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5"/> They are expected to understand reports they were never taught how to read.</li>
-                <li className="flex items-start"><AlertCircle className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5"/> They are expected to make decisions without knowing what lenders may review.</li>
-                <li className="flex items-start"><AlertCircle className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5"/> They are expected to improve their financial situation without access to the education and tools that could help them understand where they stand.</li>
+                <li className="flex items-start"><AlertCircle className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5"/> They are told to fix their credit without being taught how to understand a credit report.</li>
+                <li className="flex items-start"><AlertCircle className="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5"/> They are told to apply, build, grow, and make better decisions without being shown how to review the information that may affect those decisions.</li>
             </ul>
 
             <p>Spartan Warrior Foundation was created to help bridge that gap.</p>
             
-            <p>Our goal is to provide access to financial literacy education, credit education, software tools, classroom-style learning, and structured resources so individuals can learn, participate, and take action for themselves.</p>
+            <p>Our mission is to provide access to financial literacy education, credit education resources, classroom-style learning, and tools so people can become more educated, more aware, and more prepared to take action for themselves.</p>
             
-            <div className="text-center font-bold text-xl text-primary mt-12 bg-primary/5 p-8 rounded-2xl">
-                <p className="mb-2">We do not believe in creating dependency.</p>
-                <p className="text-accent">We believe in creating access.</p>
+            <div className="text-center font-bold text-xl text-primary mt-12 bg-primary/5 p-8 rounded-2xl border border-primary/10">
+                <p className="mb-2 text-primary/80">We do not believe in creating dependency.</p>
+                <p className="text-accent text-2xl">We believe in creating access.</p>
             </div>
           </motion.div>
         </div>
@@ -112,7 +112,7 @@ const About = () => {
               <p>Ali did not come from a place where everything was handed to him. His journey was built through pressure, work, mistakes, learning, rebuilding, and refusing to quit.</p>
               
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 my-6">
-                  <p className="font-bold text-primary mb-4">Over time, he learned that many people are not struggling because they are lazy, careless, or unwilling to change. Many people are struggling because they were never taught.</p>
+                  <p className="font-bold text-primary mb-4">Over time, Ali learned something important: many people are not struggling because they are lazy, careless, or unwilling to change. Many people are struggling because they were never taught.</p>
                   <ul className="space-y-2 text-primary/70">
                       <li>• They were never taught how money works.</li>
                       <li>• They were never taught how credit works.</li>
@@ -122,8 +122,8 @@ const About = () => {
                   </ul>
               </div>
 
-              <p>Ali built his career around education, software, systems, and helping people understand what is in front of them. Through that work, he saw a major problem: the people who often need financial education and credit education the most are usually the people who cannot afford access to the tools, classrooms, and resources that could help them.</p>
-              <p>That is one of the reasons Spartan Warrior Foundation was created.</p>
+              <p>Ali built his career around education, software, systems, and helping people understand what is in front of them. Through that work, he saw that the people who often need financial education and credit education the most are usually the people who cannot afford access to the tools, classrooms, and resources that could help them.</p>
+              <p>That is why Spartan Warrior Foundation was created. This foundation was built to give people a starting point.</p>
             </div>
           </motion.div>
         </div>
@@ -166,8 +166,7 @@ const About = () => {
             variants={fadeIn}
             className="bg-primary text-white rounded-[2.5rem] p-8 md:p-12 shadow-premium"
           >
-            <h2 className="text-3xl font-bold text-accent mb-6">Our Philosophy</h2>
-            <h3 className="text-xl font-medium mb-8">We Are Not Here to Carry People. We Are Here to Equip Them.</h3>
+            <h2 className="text-3xl font-bold text-accent mb-6">We Are Not Here to Carry People.<br/>We Are Here to Equip Them.</h2>
             <p className="mb-6 text-white/80">Spartan Warrior Foundation is built on a simple belief: People need tools, education, structure, and access. But they also need accountability.</p>
             
             <div className="space-y-4 mb-8">
@@ -189,7 +188,7 @@ const About = () => {
                 <p className="flex items-center"><ArrowRight className="w-5 h-5 mr-2 text-accent"/> The participant must stay consistent.</p>
             </div>
 
-            <p className="mt-8 text-2xl font-bold text-accent text-center bg-white/5 py-4 rounded-2xl">Access creates opportunity, but action creates progress.</p>
+            <p className="mt-8 text-2xl font-bold text-accent text-center bg-white/5 py-4 rounded-2xl">Access creates opportunity. Action creates progress.</p>
           </motion.div>
         </div>
       </section>

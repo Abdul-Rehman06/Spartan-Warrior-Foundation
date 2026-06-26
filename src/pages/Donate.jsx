@@ -49,15 +49,17 @@ const Donate = () => {
                 Every Dollar is Matched
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-tight">
-              Give Someone Access to the Tools and Education They Need to <span className="text-accent">Take Ownership</span>
+              Support the Mission. Help Us Equip People Who Are Ready to Learn.
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-8">
-              Your donation helps Spartan Warrior Foundation provide financial literacy education, credit education resources, classroom-style learning, and access to tools for individuals who may not be able to afford them on their own.
+              Spartan Warrior Foundation provides financial literacy education, credit education resources, classroom-style learning, and tools for individuals who may not be able to afford access on their own.
             </p>
             
             <div className="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl max-w-2xl mx-auto mb-10">
-                <p className="text-lg font-bold text-white">Every dollar donated is matched dollar-for-dollar by The Score Machine.</p>
-                <p className="text-accent font-medium mt-1">That means your support can go twice as far.</p>
+                <p className="text-lg font-bold text-white mb-2">Your donation helps create access.</p>
+                <p className="text-accent font-medium mb-4">The Score Machine matches every dollar donated, dollar-for-dollar, so your support can go twice as far.</p>
+                <p className="text-white/90 font-medium">We do not carry people. We do not do the work for them.</p>
+                <p className="text-white/90 font-medium">We help provide the tools, the classroom, and the structure. <span className="text-accent font-bold">The participant must show up and take action.</span></p>
             </div>
 
             <div className="flex flex-col sm:flex-row justify-center gap-6">

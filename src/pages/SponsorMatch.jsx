@@ -30,12 +30,15 @@ const SponsorMatch = () => {
                 The Score Machine Partnership
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary tracking-tight leading-tight">
-                Every Dollar Donated Creates <span className="text-accent">Double the Support</span>
+                The Score Machine Match Helps <span className="text-accent">Expand Access</span>
             </h1>
             <p className="text-lg md:text-xl text-primary/70 leading-relaxed max-w-3xl mx-auto">
-                Through a sponsor partnership with The Score Machine, every dollar donated to Spartan Warrior Foundation is matched dollar-for-dollar to help expand access to financial literacy education, credit education resources, classroom-style learning, and tools.
+                Through a sponsor partnership with The Score Machine, donations to Spartan Warrior Foundation are matched dollar-for-dollar to help provide more educational access, tools, classroom resources, and learning opportunities.
             </p>
-            <p className="text-xl font-bold text-primary pt-2">When you give, your donation can go twice as far.</p>
+            <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10 mt-8 text-left md:text-center max-w-3xl mx-auto">
+                <p className="text-primary font-bold mb-2">The match is not about promising results. It is about creating access.</p>
+                <p className="text-primary/80">It helps people receive the tools and education they may not be able to afford on their own, while still requiring each participant to show up, learn, and do the work.</p>
+            </div>
           </motion.div>
         </div>
       </section>

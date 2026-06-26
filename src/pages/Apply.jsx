@@ -56,16 +56,16 @@ const Apply = () => {
         <div className="max-w-4xl mx-auto text-center z-10 relative">
           <motion.div initial="hidden" animate="visible" variants={fadeIn} className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-primary tracking-tight leading-tight">
-                Apply for Access to Financial Literacy Education, Credit Education, and Tools
+                Apply for Access If You Are Ready to Show Up and Learn
             </h1>
             <p className="text-lg md:text-xl text-primary/70 leading-relaxed max-w-3xl mx-auto mb-8">
-                Spartan Warrior Foundation provides access to educational resources, classroom-style learning, and tools for individuals who are ready to show up, learn, and take ownership of their financial future.
+                Spartan Warrior Foundation provides access to financial literacy education, credit education resources, classroom-style learning, and tools for individuals who are ready to take ownership of their own financial education.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 bg-red-50/50 p-6 rounded-2xl border border-red-100 max-w-2xl mx-auto mb-10 text-red-800 font-bold">
-                <span className="flex items-center justify-center"><XCircle className="w-5 h-5 mr-2" /> We do not fix credit.</span>
-                <span className="flex items-center justify-center"><XCircle className="w-5 h-5 mr-2" /> We do not do the work for you.</span>
+                <span className="flex items-center justify-center"><XCircle className="w-5 h-5 mr-2" /> This is not credit repair.</span>
+                <span className="flex items-center justify-center"><XCircle className="w-5 h-5 mr-2" /> This is not someone doing the work for you.</span>
             </div>
-            <p className="text-xl font-bold text-primary mb-10">We provide education, tools, and structure. You must show up and take action.</p>
+            <p className="text-xl font-bold text-primary mb-10">This is access to education, tools, classroom resources, and structure.<br/><span className="text-accent">If approved, you must show up, learn, participate, and take action.</span></p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-6 pt-4">
                 <a href="#application-form" className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary text-white rounded-full font-bold tracking-wide overflow-hidden transition-transform hover:scale-105 active:scale-95 shadow-premium">
@@ -74,7 +74,7 @@ const Apply = () => {
                     <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
                 </a>
                 <Link to="/programs" className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-white text-primary border border-gray-200 rounded-full font-bold tracking-wide hover:bg-gray-50 transition-all hover:shadow-premium">
-                    <span className="text-lg">View Our Programs</span>
+                    <span className="text-lg">View Programs</span>
                 </Link>
             </div>
           </motion.div>

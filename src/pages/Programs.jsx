@@ -34,15 +34,15 @@ const Programs = () => {
             variants={fadeIn}
           >
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
-              Programs Built to Educate, Equip, and <span className="text-accent">Create Access</span>
+              Programs Built to Equip People With Tools, Education, and Structure
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed mb-8">
-              Spartan Warrior Foundation provides financial literacy education, credit education resources, classroom-style learning, and access to tools for individuals who are ready to show up, learn, and do the work for themselves.
+              Spartan Warrior Foundation programs are designed to help individuals better understand their financial profile through financial literacy education, credit education resources, classroom-style learning, and access to tools.
             </p>
             <div className="inline-flex flex-col sm:flex-row gap-4 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl text-white font-medium text-lg text-left">
-                <div className="flex items-center"><AlertCircle className="w-5 h-5 text-red-400 mr-3 shrink-0" /> We do not fix credit.</div>
-                <div className="flex items-center"><AlertCircle className="w-5 h-5 text-red-400 mr-3 shrink-0" /> We do not do the work for people.</div>
-                <div className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0" /> The participant must take action.</div>
+                <div className="flex items-center"><AlertCircle className="w-5 h-5 text-red-400 mr-3 shrink-0" /> We do not do the work for participants.</div>
+                <div className="flex items-center"><AlertCircle className="w-5 h-5 text-red-400 mr-3 shrink-0" /> We provide the resources.</div>
+                <div className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0" /> They must show up, learn, and take action.</div>
             </div>
           </motion.div>
         </div>
