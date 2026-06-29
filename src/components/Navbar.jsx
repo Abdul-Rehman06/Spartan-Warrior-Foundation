@@ -31,7 +31,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center gap-3">
-          <img src="/assets/Logo/Logo.png" alt="Spartan Warrior Foundation" className="h-10 w-auto" />
+          <img src="/assets/Logo/Main-Logo.png" alt="Spartan Warrior Foundation" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Menu */}
