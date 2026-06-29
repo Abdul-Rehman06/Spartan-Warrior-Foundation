@@ -283,7 +283,60 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 9. How Program Access Works Section */}
+      {/* 9. Impact Numbers Section */}
+      <section className="py-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <FadeIn>
+              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Impact Numbers</h2>
+              <p className="text-4xl md:text-5xl font-bold mb-6 text-primary">Built on Proven Reach, Real Education, and Community Impact</p>
+              <p className="text-xl text-primary/80 max-w-4xl mx-auto leading-relaxed">
+                Spartan Warrior Foundation is not being built from theory. It is being built from years of experience educating people, developing tools, building financial education systems, and helping individuals better understand the information in front of them.
+              </p>
+              <p className="text-lg text-primary/70 mt-6 max-w-4xl mx-auto leading-relaxed">
+                Through Ali Badi’s financial education ecosystem, software platforms, community education, and training resources, thousands of individuals have already been reached with tools and education designed to help them better understand credit, financial literacy, and financial readiness.
+              </p>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={0.2} className="bg-primary rounded-[2.5rem] p-10 md:p-16 shadow-premium relative overflow-hidden mb-16">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px]"></div>
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">Impact Snapshot</h3>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">10,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Individuals Reached</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">7,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Full Stat Here]</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">[Number]</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Stat Label Here]</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">[Number]</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Stat Label Here]</div>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.4} className="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 text-center">
+            <h3 className="text-2xl font-bold text-primary mb-6">Why This Matters</h3>
+            <div className="space-y-4 text-lg text-primary/80">
+              <p>These numbers show that the mission behind Spartan Warrior Foundation is not new.</p>
+              <p>The foundation is being created to expand access to the same type of education, tools, and structure for people who may not be able to afford them on their own.</p>
+              <p className="font-bold text-primary">The goal is to take what has already reached thousands and make it accessible to individuals who need education, guidance, and tools but may not have the financial ability to access them privately.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 10. How Program Access Works Section */}
       <section className="py-24 bg-white border-b border-gray-100">
           <div className="container mx-auto px-6 max-w-5xl">
               <FadeIn className="text-center mb-16">
