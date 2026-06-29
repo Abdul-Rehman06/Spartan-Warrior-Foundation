@@ -205,9 +205,9 @@ const FAQ = () => {
               <p className="mb-2">For every dollar donated to Spartan Warrior Foundation, The Score Machine matches one dollar to help increase the total support available for education, tools, classroom access, and program resources.</p>
               <p className="mb-2 font-bold">Example:</p>
               <ul className="list-none space-y-1 mb-2">
-                  <li>• A $50 donation creates $100 in total support.</li>
-                  <li>• A $100 donation creates $200 in total support.</li>
                   <li>• A $500 donation creates $1,000 in total support.</li>
+                  <li>• A $1,000 donation creates $2,000 in total support.</li>
+                  <li>• A $5,000 donation creates $10,000 in total support.</li>
               </ul>
               <p>This match allows donor support to go further.</p>
           </div>

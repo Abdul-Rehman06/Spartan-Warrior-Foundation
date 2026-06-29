@@ -393,10 +393,10 @@ const Home = () => {
                   <div className="bg-primary/5 rounded-2xl p-6 border border-primary/10">
                       <p className="font-bold text-primary mb-4 text-lg">Example Impact</p>
                       <ul className="space-y-3">
-                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $25 donation becomes $50 in support.</li>
-                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $50 donation becomes $100 in support.</li>
-                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $100 donation becomes $200 in support.</li>
+                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $250 donation becomes $500 in support.</li>
                         <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $500 donation becomes $1,000 in support.</li>
+                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $1,000 donation becomes $2,000 in support.</li>
+                        <li className="flex items-center gap-3 font-medium"><CheckCircle2 className="text-accent w-5 h-5" /> A $5,000 donation becomes $10,000 in support.</li>
                       </ul>
                   </div>
                 </div>

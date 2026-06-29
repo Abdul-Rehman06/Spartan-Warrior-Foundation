@@ -340,24 +340,24 @@ const About = () => {
                 <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
                     <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
                         <p className="text-primary/60 font-medium mb-2">You Give</p>
-                        <p className="text-3xl font-bold text-primary">$50</p>
-                        <ArrowRight className="w-6 h-6 text-accent mx-auto my-4 rotate-90 md:rotate-0" />
-                        <p className="text-primary/60 font-medium mb-2">Becomes</p>
-                        <p className="text-3xl font-bold text-accent">$100 <span className="text-lg text-primary/50">in support</span></p>
-                    </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                        <p className="text-primary/60 font-medium mb-2">You Give</p>
-                        <p className="text-3xl font-bold text-primary">$100</p>
-                        <ArrowRight className="w-6 h-6 text-accent mx-auto my-4 rotate-90 md:rotate-0" />
-                        <p className="text-primary/60 font-medium mb-2">Becomes</p>
-                        <p className="text-3xl font-bold text-accent">$200 <span className="text-lg text-primary/50">in support</span></p>
-                    </div>
-                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                        <p className="text-primary/60 font-medium mb-2">You Give</p>
                         <p className="text-3xl font-bold text-primary">$500</p>
                         <ArrowRight className="w-6 h-6 text-accent mx-auto my-4 rotate-90 md:rotate-0" />
                         <p className="text-primary/60 font-medium mb-2">Becomes</p>
                         <p className="text-3xl font-bold text-accent">$1,000 <span className="text-lg text-primary/50">in support</span></p>
+                    </div>
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <p className="text-primary/60 font-medium mb-2">You Give</p>
+                        <p className="text-3xl font-bold text-primary">$1,000</p>
+                        <ArrowRight className="w-6 h-6 text-accent mx-auto my-4 rotate-90 md:rotate-0" />
+                        <p className="text-primary/60 font-medium mb-2">Becomes</p>
+                        <p className="text-3xl font-bold text-accent">$2,000 <span className="text-lg text-primary/50">in support</span></p>
+                    </div>
+                    <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                        <p className="text-primary/60 font-medium mb-2">You Give</p>
+                        <p className="text-3xl font-bold text-primary">$5,000</p>
+                        <ArrowRight className="w-6 h-6 text-accent mx-auto my-4 rotate-90 md:rotate-0" />
+                        <p className="text-primary/60 font-medium mb-2">Becomes</p>
+                        <p className="text-3xl font-bold text-accent">$10,000 <span className="text-lg text-primary/50">in support</span></p>
                     </div>
                 </div>
             </motion.div>

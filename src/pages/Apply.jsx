@@ -205,9 +205,9 @@ const Apply = () => {
                       <div className="bg-primary/5 rounded-xl p-6 border border-primary/10">
                           <p className="font-bold text-accent mb-4">Example Sponsor Match Impact:</p>
                           <ul className="space-y-2 text-sm font-medium text-primary/80">
-                              <li>• A $50 donation can become $100 in support.</li>
-                              <li>• A $100 donation can become $200 in support.</li>
                               <li>• A $500 donation can become $1,000 in support.</li>
+                              <li>• A $1,000 donation can become $2,000 in support.</li>
+                              <li>• A $5,000 donation can become $10,000 in support.</li>
                           </ul>
                       </div>
                   </motion.div>

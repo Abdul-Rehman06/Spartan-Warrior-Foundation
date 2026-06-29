@@ -19,16 +19,16 @@ const staggerContainer = {
 };
 
 const donationTiers = [
-    { amount: 25, impact: "This can help provide basic educational resources, learning materials, and financial literacy access." },
-    { amount: 50, impact: "This can help provide deeper access to education, credit education resources, and participant learning support." },
-    { amount: 100, impact: "This can help support access to classroom-style learning, educational tools, and structured resources." },
-    { amount: 250, impact: "This can help sponsor more advanced access to education, tools, and participant resources." },
-    { amount: 500, impact: "This can help provide access for multiple participants or support larger educational program needs." },
-    { amount: 1000, impact: "This can help expand program access, sponsor participants, support workshops, and strengthen the foundation’s educational reach." }
+    { amount: 250, impact: "This can help provide basic educational resources, learning materials, and financial literacy access." },
+    { amount: 500, impact: "This can help provide deeper access to education, credit education resources, and participant learning support." },
+    { amount: 1000, impact: "This can help support access to classroom-style learning, educational tools, and structured resources." },
+    { amount: 2500, impact: "This can help sponsor more advanced access to education, tools, and participant resources." },
+    { amount: 5000, impact: "This can help provide access for multiple participants or support larger educational program needs." },
+    { amount: 10000, impact: "This can help expand program access, sponsor participants, support workshops, and strengthen the foundation’s educational reach." }
 ];
 
 const Donate = () => {
-  const [selectedAmount, setSelectedAmount] = useState(100);
+  const [selectedAmount, setSelectedAmount] = useState(1000);
 
   return (
     <div className="min-h-screen bg-background">
@@ -351,9 +351,9 @@ const Donate = () => {
                 <p className="text-lg text-primary/80 mb-8">A monthly gift allows the foundation to plan, sponsor participants, support classroom access, and continue building programs for individuals who are ready to show up and learn.</p>
                 
                 <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm mb-8 space-y-4">
-                    <p className="font-bold text-primary border-b border-gray-100 pb-3 flex justify-between"><span>$25 monthly</span> <span className="text-accent">Becomes $50</span></p>
-                    <p className="font-bold text-primary border-b border-gray-100 pb-3 flex justify-between"><span>$50 monthly</span> <span className="text-accent">Becomes $100</span></p>
-                    <p className="font-bold text-primary flex justify-between"><span>$100 monthly</span> <span className="text-accent">Becomes $200</span></p>
+                    <p className="font-bold text-primary border-b border-gray-100 pb-3 flex justify-between"><span>$250 monthly</span> <span className="text-accent">Becomes $500</span></p>
+                    <p className="font-bold text-primary border-b border-gray-100 pb-3 flex justify-between"><span>$500 monthly</span> <span className="text-accent">Becomes $1,000</span></p>
+                    <p className="font-bold text-primary flex justify-between"><span>$1,000 monthly</span> <span className="text-accent">Becomes $2,000</span></p>
                 </div>
 
                 <p className="font-bold text-xl text-primary mb-8">Monthly giving helps create consistent impact.</p>

@@ -196,26 +196,26 @@ const Impact = () => {
                 
                 <p className="text-2xl font-bold text-primary mb-10">This means every donation has the ability to go twice as far.</p>
 
-                <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-5xl mx-auto mb-12">
-                    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                        <p className="text-sm text-primary/60 font-medium mb-1">Give $25</p>
-                        <p className="text-2xl font-bold text-accent">$50 <span className="text-xs text-primary/50 block">in support</span></p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center relative overflow-hidden group hover:bg-white/10 transition-colors">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-accent/20 rounded-full blur-[30px] -mr-12 -mt-12"></div>
+                        <p className="text-sm text-primary/60 font-medium mb-1">Give $250</p>
+                        <p className="text-2xl font-bold text-accent">$500 <span className="text-xs text-primary/50 block">in support</span></p>
                     </div>
-                    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                        <p className="text-sm text-primary/60 font-medium mb-1">Give $50</p>
-                        <p className="text-2xl font-bold text-accent">$100 <span className="text-xs text-primary/50 block">in support</span></p>
-                    </div>
-                    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                        <p className="text-sm text-primary/60 font-medium mb-1">Give $100</p>
-                        <p className="text-2xl font-bold text-accent">$200 <span className="text-xs text-primary/50 block">in support</span></p>
-                    </div>
-                    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center relative overflow-hidden group hover:bg-white/10 transition-colors">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-accent/20 rounded-full blur-[30px] -mr-12 -mt-12"></div>
                         <p className="text-sm text-primary/60 font-medium mb-1">Give $500</p>
                         <p className="text-2xl font-bold text-accent">$1,000 <span className="text-xs text-primary/50 block">in support</span></p>
                     </div>
-                    <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 col-span-2 md:col-span-1">
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center relative overflow-hidden group hover:bg-white/10 transition-colors">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-accent/20 rounded-full blur-[30px] -mr-12 -mt-12"></div>
                         <p className="text-sm text-primary/60 font-medium mb-1">Give $1,000</p>
                         <p className="text-2xl font-bold text-accent">$2,000 <span className="text-xs text-primary/50 block">in support</span></p>
+                    </div>
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center relative overflow-hidden group hover:bg-white/10 transition-colors">
+                        <div className="absolute top-0 right-0 w-24 h-24 bg-accent/20 rounded-full blur-[30px] -mr-12 -mt-12"></div>
+                        <p className="text-sm text-primary/60 font-medium mb-1">Give $5,000</p>
+                        <p className="text-2xl font-bold text-accent">$10,000 <span className="text-xs text-primary/50 block">in support</span></p>
                     </div>
                 </div>
 
