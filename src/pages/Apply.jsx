@@ -254,15 +254,144 @@ const Apply = () => {
                 <p className="text-primary/60">Please complete the form below. Submitting this form does not guarantee approval or access.</p>
             </div>
 
-            <iframe  
-               src="https://program-access-appli.vibepreview.com"  
-               width="100%"  
-               height="1000"  
-               style={{ border: 'none', minHeight: '100vh', borderRadius: '8px' }}  
-               allow="fullscreen" 
-               title="Program Access Application Form" 
-             ></iframe>
+            <form onSubmit={handleSubmit} className="space-y-8">
+              
+              {/* Personal Info */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">First Name *</label>
+                  <input type="text" name="firstName" required value={formData.firstName} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">Last Name *</label>
+                  <input type="text" name="lastName" required value={formData.lastName} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">Email Address *</label>
+                  <input type="email" name="email" required value={formData.email} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">Phone Number</label>
+                  <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">City *</label>
+                  <input type="text" name="city" required value={formData.city} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">State *</label>
+                  <input type="text" name="state" required value={formData.state} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all" />
+                </div>
+              </div>
 
+              <hr className="border-gray-100" />
+
+              {/* Application Details */}
+              <div className="space-y-6">
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-primary">Are you requesting access for yourself or someone else? *</label>
+                      <select name="forWhom" required value={formData.forWhom} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all bg-white">
+                          <option value="">Select an option</option>
+                          <option value="myself">Myself</option>
+                          <option value="someone_else">Someone else</option>
+                      </select>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-primary">What type of support are you looking for? *</label>
+                      <select name="supportType" required value={formData.supportType} onChange={handleChange} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all bg-white">
+                          <option value="">Select an option</option>
+                          <option value="financial_literacy">Financial literacy education</option>
+                          <option value="credit_education">Credit education resources</option>
+                          <option value="classroom_access">Classroom access</option>
+                          <option value="software_tools">Software/tool access</option>
+                          <option value="general_guidance">General guidance</option>
+                          <option value="not_sure">Not sure yet</option>
+                      </select>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-primary">Are you currently able to afford paid financial literacy or credit education tools? *</label>
+                      <div className="flex gap-6 pt-2">
+                          {['Yes', 'No', 'Not sure'].map((option) => (
+                              <label key={option} className="flex items-center space-x-2 cursor-pointer">
+                                  <input type="radio" name="canAfford" value={option} required onChange={handleChange} className="w-4 h-4 text-accent border-gray-300 focus:ring-accent" />
+                                  <span className="text-primary/80">{option}</span>
+                              </label>
+                          ))}
+                      </div>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-primary">Briefly explain why you are requesting access. What are you hoping to learn? *</label>
+                      <textarea name="whatToLearn" required value={formData.whatToLearn} onChange={handleChange} rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all resize-none"></textarea>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-primary">Are you willing to attend classes, review training, and use the tools provided? *</label>
+                      <div className="flex gap-6 pt-2">
+                          {['Yes', 'No', 'I need more information'].map((option) => (
+                              <label key={option} className="flex items-center space-x-2 cursor-pointer">
+                                  <input type="radio" name="willAttend" value={option} required onChange={handleChange} className="w-4 h-4 text-accent border-gray-300 focus:ring-accent" />
+                                  <span className="text-primary/80">{option}</span>
+                              </label>
+                          ))}
+                      </div>
+                  </div>
+              </div>
+
+              <div className="bg-red-50 p-6 rounded-2xl border border-red-100 space-y-6">
+                  <h3 className="font-bold text-red-800 flex items-center"><AlertTriangle className="w-5 h-5 mr-2" /> Mandatory Acknowledgments</h3>
+                  
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-red-900">Do you understand that Spartan Warrior Foundation does not provide credit repair services? *</label>
+                      <div className="flex gap-6 pt-1">
+                          {['Yes', 'No'].map((option) => (
+                              <label key={`repair-${option}`} className="flex items-center space-x-2 cursor-pointer">
+                                  <input type="radio" name="understandNotRepair" value={option} required onChange={handleChange} className="w-4 h-4 text-red-600 border-red-300 focus:ring-red-500" />
+                                  <span className="text-red-800">{option}</span>
+                              </label>
+                          ))}
+                      </div>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-red-900">Do you understand that Spartan Warrior Foundation does not guarantee credit score increases, approvals, funding, deletions, or financial outcomes? *</label>
+                      <div className="flex gap-6 pt-1">
+                          {['Yes', 'No'].map((option) => (
+                              <label key={`guarantees-${option}`} className="flex items-center space-x-2 cursor-pointer">
+                                  <input type="radio" name="understandNoGuarantees" value={option} required onChange={handleChange} className="w-4 h-4 text-red-600 border-red-300 focus:ring-red-500" />
+                                  <span className="text-red-800">{option}</span>
+                              </label>
+                          ))}
+                      </div>
+                  </div>
+
+                  <div className="space-y-2">
+                      <label className="text-sm font-bold text-red-900">Do you agree that you are responsible for your own actions, participation, decisions, and results? *</label>
+                      <div className="flex gap-6 pt-1">
+                          {['Yes', 'No'].map((option) => (
+                              <label key={`responsibility-${option}`} className="flex items-center space-x-2 cursor-pointer">
+                                  <input type="radio" name="agreeResponsibility" value={option} required onChange={handleChange} className="w-4 h-4 text-red-600 border-red-300 focus:ring-red-500" />
+                                  <span className="text-red-800">{option}</span>
+                              </label>
+                          ))}
+                      </div>
+                  </div>
+              </div>
+
+              <div className="space-y-2">
+                  <label className="text-sm font-bold text-primary">Additional Message (Optional)</label>
+                  <textarea name="additionalMessage" value={formData.additionalMessage} onChange={handleChange} rows={3} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition-all resize-none"></textarea>
+              </div>
+
+              <button type="submit" className="w-full group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white rounded-xl font-bold tracking-wide overflow-hidden transition-transform hover:scale-[1.02] active:scale-[0.98] shadow-premium">
+                <span className="relative z-10">Submit Application</span>
+                <Send className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+                <div className="absolute inset-0 bg-accent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
+              </button>
+
+            </form>
           </motion.div>
         </div>
       </section>

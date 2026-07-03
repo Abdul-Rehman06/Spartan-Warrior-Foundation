@@ -311,16 +311,21 @@ const Home = () => {
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                   <div className="text-4xl md:text-5xl font-bold text-accent mb-2">7,000+</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Full Stat Here]</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Served Through Educational Programs</div>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">[Number]</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Stat Label Here]</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">440</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Active Community Members</div>
                 </div>
                 <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">[Number]</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">[Insert Stat Label Here]</div>
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">11,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">YouTube Subscribers</div>
                 </div>
+              </div>
+
+              <div className="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6 text-center max-w-2xl mx-auto">
+                  <div className="text-xl md:text-2xl font-bold text-accent mb-2">Weekly Free Live Mastermind</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Every Week, No Cost, Open to the Public</div>
               </div>
             </div>
           </FadeIn>
