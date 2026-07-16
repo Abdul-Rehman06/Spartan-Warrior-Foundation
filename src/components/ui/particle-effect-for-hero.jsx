@@ -270,7 +270,7 @@ const HeroContent = () => {
                   </h1>
                   
                   <div className="text-lg md:text-xl text-primary/80 font-medium leading-relaxed space-y-4 max-w-xl">
-                      <p>Spartan Warrior Foundation gives individuals access to financial literacy education, credit education resources, classroom-style learning, and tools so they can learn how to take ownership of their financial future.</p>
+                      <p>Serving Westchester County, New York and beyond, Spartan Warrior Foundation gives individuals access to financial literacy education, credit education resources, classroom-style learning, and tools so they can learn how to take ownership of their financial future.</p>
                       <p className="text-red-600 font-bold">We do not fix credit. We do not do the work for people.</p>
                       <p>We provide the tools, the classroom, and the structure. <strong className="text-accent">The person must show up, learn, and take action.</strong></p>
                   </div>

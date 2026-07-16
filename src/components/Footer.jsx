@@ -12,7 +12,13 @@ const Footer = () => {
               <img src="/assets/Logo/Logo-Full.png" alt="Spartan Warrior Foundation" className="h-12 w-auto" onError={(e) => e.target.src='/assets/Logo/Logo.png'} />
             </Link>
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
-              Providing financial literacy education, credit education resources, classroom access, and tools for individuals ready to learn and take ownership of their financial future.
+              Spartan Warrior Foundation Inc. is a federally recognized 501(c)(3) nonprofit organization. EIN: 39-2363731. Contributions are tax-deductible to the extent permitted by law.
+            </p>
+            <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
+              Serving Westchester County, New York and beyond.
+            </p>
+            <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
+              Spartan Warrior Foundation provides financial literacy education, credit education resources, classroom-style learning, and access to tools for informational and educational purposes only. We do not provide credit repair services, legal advice, tax advice, investment advice, or guaranteed financial outcomes.
             </p>
           </div>
 

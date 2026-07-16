@@ -73,18 +73,25 @@ const Impact = () => {
             <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 border border-primary/10">
                 <HeartHandshake className="w-7 h-7 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold text-primary mb-6">Our Commitment</h2>
-            <p className="font-medium text-primary text-xl">Spartan Warrior Foundation believes trust is built through clarity.</p>
+            <h2 className="text-3xl font-bold text-primary mb-6">Built for Community Impact and Grant Accountability</h2>
+            <p className="font-medium text-primary text-xl">Spartan Warrior Foundation Inc. is a federally recognized 501(c)(3) nonprofit organization serving Westchester County, New York and beyond.</p>
             
-            <ul className="space-y-4 my-8">
-                <li className="flex items-start"><Eye className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-bold text-primary mr-1">Donors</span> should know where their support is going.</li>
-                <li className="flex items-start"><Eye className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-bold text-primary mr-1">Sponsors</span> should understand how their contributions are being used.</li>
-                <li className="flex items-start"><Eye className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-bold text-primary mr-1">Participants</span> should understand what the foundation provides and what they are responsible for.</li>
-                <li className="flex items-start"><Eye className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-bold text-primary mr-1">The community</span> should see that this mission is focused on education, access, accountability, and impact.</li>
+            <p className="mt-4">Our mission is focused on education, access, and accountability. We provide financial literacy education, credit education resources, classroom-style learning, and tools for individuals who are ready to show up and do the work for themselves.</p>
+
+            <p className="font-bold text-primary mt-6">For funders, sponsors, and grant partners, our commitment is simple:</p>
+
+            <ul className="space-y-4 my-6">
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will be clear about who we serve.</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will be clear about how donations and funding are used.</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will be clear about what our programs provide.</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will be clear about what we do not do.</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will track impact as the foundation grows.</span></li>
+                <li className="flex items-start"><CheckCircle2 className="w-5 h-5 text-accent mr-3 mt-1 shrink-0"/> <span className="font-medium text-primary">We will not make false promises or guarantee outcomes.</span></li>
             </ul>
 
             <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
-                <p>We are committed to operating with transparency as we grow, including reporting how donations, sponsor matches, educational access, and program support are used.</p>
+                <p className="font-bold text-primary mb-2">The foundation exists to create access, not dependency.</p>
+                <p className="text-accent font-bold">Access creates opportunity. Action creates progress.</p>
             </div>
           </motion.div>
 
@@ -221,6 +228,170 @@ const Impact = () => {
 
                 <p className="text-lg font-medium text-primary/80 max-w-3xl mx-auto">This match helps the foundation provide more access, more education, and more resources to people who are ready to show up and do the work.</p>
             </motion.div>
+
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-24 bg-white border-y border-gray-200">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeIn}
+            >
+              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Voices From the Community</h2>
+              <p className="text-3xl md:text-4xl font-bold mb-6 text-primary">Real Impact. Real People.</p>
+              <p className="text-xl text-primary/80 max-w-4xl mx-auto leading-relaxed">
+                Spartan Warrior Foundation is built around real people who need access to education, tools, and structure. Many people are not looking for someone to do the work for them. They are looking for a place to learn, understand, and take the next step with more confidence.
+              </p>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            className="grid md:grid-cols-3 gap-8 mb-12"
+          >
+            <motion.div variants={fadeIn} className="bg-gray-50 p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“I did not understand what I was looking at on my credit report. I knew I wanted to improve my situation, but I did not know where to start. Having access to education and tools helped me understand the information in front of me and gave me a place to begin.”</p>
+              </div>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </motion.div>
+            
+            <motion.div variants={fadeIn} className="bg-gray-50 p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“The biggest difference was learning that I had to take ownership. Nobody was promising to fix anything for me. I was given tools, education, and direction, but I had to show up and do the work.”</p>
+              </div>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </motion.div>
+
+            <motion.div variants={fadeIn} className="bg-gray-50 p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“Before getting access to this type of education, I was guessing. I did not understand what lenders may review or how my financial profile could affect my options. The education helped me slow down, get organized, and start learning the system.”</p>
+              </div>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </motion.div>
+          </motion.div>
+
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="max-w-4xl mx-auto text-center"
+          >
+            <p className="text-sm text-primary/60 italic leading-relaxed">
+              Participant stories are shared for educational and community impact purposes only. Individual experiences may vary. Spartan Warrior Foundation does not guarantee credit score increases, approvals, deletions, funding, loans, or specific financial outcomes.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Funders and Grant Partners Section */}
+      <section className="py-24 px-4 md:px-8 bg-gray-50 border-b border-gray-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeIn}
+            >
+              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Information for Funders and Grant Partners</h2>
+              <p className="text-3xl md:text-4xl font-bold mb-6 text-primary">Partner With Us to Create Access</p>
+              <p className="text-xl text-primary/80 max-w-4xl mx-auto leading-relaxed">
+                Spartan Warrior Foundation welcomes support from foundations, grant-making organizations, corporate sponsors, private donors, and community partners who believe in expanding access to financial literacy education and credit education resources.
+              </p>
+              <p className="text-lg text-primary/80 max-w-4xl mx-auto mt-4">
+                Our programs are designed to support individuals who may not be able to afford premium education, software tools, or structured classroom resources on their own.
+              </p>
+            </motion.div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeIn}
+              className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100"
+            >
+              <h3 className="text-2xl font-bold text-primary mb-6">Funders can expect:</h3>
+              <ul className="space-y-4">
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Clear 501(c)(3) nonprofit identification</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">EIN visibility</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">A defined geographic service area</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Transparent program descriptions</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Clear education-only disclaimers</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Participant accountability expectations</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Impact tracking as programs grow</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">Donation and sponsor match reporting</span></li>
+                <li className="flex items-center"><CheckCircle2 className="w-5 h-5 text-accent mr-3 shrink-0"/> <span className="font-medium text-primary">No false promises or guaranteed financial outcomes</span></li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-100px" }}
+              variants={fadeIn}
+              className="space-y-8"
+            >
+              <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-bold text-primary mb-4">Service Area</h3>
+                <p className="text-primary/80 font-medium">
+                  Spartan Warrior Foundation is rooted in Westchester County, New York, with the ability to serve individuals beyond the local region through online education, classroom-style learning, and digital tools.
+                </p>
+              </div>
+
+              <div className="bg-primary text-white p-8 rounded-3xl shadow-premium relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-accent/20 rounded-full blur-[60px]"></div>
+                <div className="relative z-10">
+                  <h3 className="text-xl font-bold text-accent mb-4">Our Commitment to Funders</h3>
+                  <p className="text-white/90 font-medium mb-4">
+                    We are committed to using funding to expand access, support education, and create measurable program activity.
+                  </p>
+                  <p className="font-bold text-white mb-4">Spartan Warrior Foundation does not promise guaranteed outcomes.</p>
+                  <p className="text-white/90">
+                    We promise to provide access, education, tools, structure, transparency, and accountability.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeIn}
+            className="bg-white p-10 rounded-3xl shadow-sm border border-gray-100 max-w-4xl mx-auto"
+          >
+            <h3 className="text-2xl font-bold text-primary mb-6 text-center">Funding Priorities</h3>
+            <p className="text-primary/80 font-medium mb-8 text-center">Grant funding and sponsorship support may help provide:</p>
+            
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-left">
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Financial literacy education</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Credit education resources</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Sponsored software access</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Classroom-style learning</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Educational workshops</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Participant onboarding</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Learning materials</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Community outreach</span></div>
+                <div className="flex items-center"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Technology and platform support</span></div>
+                <div className="flex items-center md:col-span-3"><span className="w-2 h-2 bg-accent rounded-full mr-3 shrink-0"></span> <span className="font-medium text-primary text-sm">Impact tracking and reporting</span></div>
+            </div>
+          </motion.div>
 
         </div>
       </section>

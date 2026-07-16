@@ -35,7 +35,69 @@ const Home = () => {
         <ParticleHero />
       </div>
 
-      {/* 2. Why We Exist Section */}
+      {/* 2. Impact Numbers Section */}
+      <section className="py-24 bg-white border-b border-gray-100">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-16">
+            <FadeIn>
+              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Impact Snapshot</h2>
+              <p className="text-4xl md:text-5xl font-bold mb-6 text-primary">Built on Proven Reach, Real Education, and Community Impact</p>
+              <p className="text-xl text-primary/80 max-w-4xl mx-auto leading-relaxed">
+                Spartan Warrior Foundation is built from real community reach, financial education experience, software tools, and classroom-based learning. The mission is not theory. It is built from years of work helping people better understand credit, financial literacy, and financial readiness.
+              </p>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={0.2} className="bg-primary rounded-[2.5rem] p-10 md:p-16 shadow-premium relative overflow-hidden mb-16">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px]"></div>
+            <div className="relative z-10">
+              <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">Impact Snapshot</h3>
+              
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">10,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Individuals Reached</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">7,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Served Through Educational Programs</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">440</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Active Community Members</div>
+                </div>
+                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">11,000+</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">YouTube Subscribers</div>
+                </div>
+              </div>
+
+              <div className="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6 text-center max-w-2xl mx-auto">
+                  <div className="text-xl md:text-2xl font-bold text-accent mb-2">Weekly Free Live Mastermind</div>
+                  <div className="text-white/80 font-medium text-sm md:text-base">Every Week, No Cost, Open to the Public</div>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.4} className="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 text-center">
+            <h3 className="text-2xl font-bold text-primary mb-6">Why This Matters</h3>
+            <div className="space-y-4 text-lg text-primary/80">
+              <p>These numbers represent the reach, education, tools, and community-based learning connected to the mission behind Spartan Warrior Foundation.</p>
+              <p>They show that the need is real.</p>
+              <div className="flex flex-wrap justify-center gap-4 py-4">
+                  <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-primary shadow-sm border border-gray-100">People need education.</span>
+                  <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-primary shadow-sm border border-gray-100">People need access.</span>
+                  <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-primary shadow-sm border border-gray-100">People need structure.</span>
+                  <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-primary shadow-sm border border-gray-100">People need tools.</span>
+                  <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-primary shadow-sm border border-gray-100">People need a place to learn.</span>
+              </div>
+              <p className="font-bold text-primary mt-4">Spartan Warrior Foundation was created to expand that access for individuals who may not be able to afford financial literacy education, credit education resources, or premium tools on their own.</p>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
+      {/* 3. Why We Exist Section */}
       <section className="py-24 relative bg-white">
         <div className="container mx-auto px-6 max-w-5xl text-center">
           <FadeIn>
@@ -97,31 +159,46 @@ const Home = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <FadeIn direction="right">
-                <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Founder Preview</h2>
+                <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Founder Story</h2>
                 <h3 className="text-4xl font-bold text-primary mb-6">Why This Foundation Was Started</h3>
                 <div className="space-y-4 text-lg text-primary/80 mb-8">
-                    <p>Spartan Warrior Foundation was founded by Ali Badi, a builder, educator, software founder, and entrepreneur who understands what it means to come from limited resources and have to figure things out the hard way.</p>
-                    <p>Ali built his career around education, software, systems, and helping people understand what is in front of them.</p>
-                    <p className="font-bold text-primary">Through that work, he saw a major problem.</p>
-                    <p>The people who often need financial literacy education, credit education, and structured tools the most are usually the people who cannot afford access to them.</p>
+                    <p>Spartan Warrior Foundation was founded by Ali Badi, a builder, educator, software founder, and entrepreneur who understands what it means to come from limited resources and have to figure the system out the hard way.</p>
+                    <p className="font-bold text-primary">Ali did not build this mission from theory. He built it from experience.</p>
+                    <p>He has seen people work hard and still feel trapped because they were never taught how the financial system works. He has seen people get denied, discouraged, overwhelmed, and embarrassed by financial information they were never taught how to understand.</p>
+                    <p>Too many people are told to fix their finances without being given the education. They are told to fix their credit without being taught how to read a credit report.</p>
+                    <p>They are told to make better decisions without being shown what lenders may review. They are told to stop applying blindly, but nobody gives them the tools to understand where they stand.</p>
+                    <p className="font-bold text-accent">That is the gap Spartan Warrior Foundation was created to address.</p>
                 </div>
             </FadeIn>
             <FadeIn direction="left" className="bg-secondary p-10 rounded-[2.5rem] border border-gray-100 shadow-sm relative">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 rounded-bl-full -z-10"></div>
-                <ul className="space-y-6 text-xl text-primary font-medium mb-8">
-                    <li className="flex gap-4"><XCircle className="text-red-500 shrink-0 mt-1" /> They are told to fix the problem, but they are not given the classroom.</li>
-                    <li className="flex gap-4"><XCircle className="text-red-500 shrink-0 mt-1" /> They are told to improve, but they are not given the tools.</li>
-                    <li className="flex gap-4"><XCircle className="text-red-500 shrink-0 mt-1" /> They are told to make better decisions, but they are not taught how the system works.</li>
-                </ul>
-                <div className="bg-white p-6 rounded-2xl shadow-sm">
-                    <p className="font-bold text-primary mb-4">That is why Spartan Warrior Foundation exists.</p>
-                    <p className="text-primary/70 mb-2">Not to carry people. Not to do the work for them.</p>
-                    <p className="text-accent font-bold">But to equip them with access, education, tools, and structure.</p>
+                
+                <div className="space-y-4 text-lg text-primary mb-8 font-medium">
+                    <p>This foundation exists because financial literacy should not only be available to people who can afford premium tools, private coaching, or paid education.</p>
+                    <ul className="space-y-2 text-accent font-bold text-xl pt-2">
+                      <li>People deserve a starting point.</li>
+                      <li>They deserve a classroom.</li>
+                      <li>They deserve a toolset.</li>
+                      <li>They deserve structure.</li>
+                    </ul>
+                    <p className="pt-2">They deserve the opportunity to learn how to take ownership of their own financial future.</p>
                 </div>
-                <div className="mt-8 text-center">
-                    <Link to="/about" className="inline-block px-8 py-4 rounded-full bg-primary hover:bg-primary/90 text-white font-bold transition-all">
-                        Read the Founder Story
-                    </Link>
+
+                <div className="bg-white p-6 rounded-2xl shadow-sm space-y-3 text-primary/80">
+                    <p className="font-bold text-primary">Spartan Warrior Foundation does not exist to carry people. It does not exist to do the work for them.</p>
+                    <p>It does not exist to promise shortcuts, approvals, deletions, funding, or guaranteed outcomes.</p>
+                    <p className="text-accent font-bold">It exists to equip people.</p>
+                    <ul className="grid grid-cols-2 gap-2 pt-2 text-sm font-bold text-primary">
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-accent" /> We provide the tools.</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-accent" /> We provide the classroom.</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-accent" /> We provide the education.</li>
+                      <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-accent" /> We provide the structure.</li>
+                    </ul>
+                </div>
+                
+                <div className="mt-6 text-primary/80 font-medium">
+                    <p>The participant must show up, learn, take action, and stay consistent.</p>
+                    <p className="font-bold text-primary mt-2">That is the mission. Not handouts. Not false promises. Not dependency. Access, education, accountability, and action.</p>
                 </div>
             </FadeIn>
           </div>
@@ -283,60 +360,49 @@ const Home = () => {
         </div>
       </section>
 
-      {/* 9. Impact Numbers Section */}
-      <section className="py-24 bg-white border-b border-gray-100">
+      {/* 9. Testimonials Section */}
+      <section className="py-24 bg-gray-50 border-y border-gray-200">
         <div className="container mx-auto px-6 max-w-6xl">
           <div className="text-center mb-16">
             <FadeIn>
-              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Impact Numbers</h2>
-              <p className="text-4xl md:text-5xl font-bold mb-6 text-primary">Built on Proven Reach, Real Education, and Community Impact</p>
+              <h2 className="text-sm font-bold text-accent tracking-widest uppercase mb-4">Voices From the Community</h2>
+              <p className="text-3xl md:text-4xl font-bold mb-6 text-primary">Real Impact. Real People.</p>
               <p className="text-xl text-primary/80 max-w-4xl mx-auto leading-relaxed">
-                Spartan Warrior Foundation is not being built from theory. It is being built from years of experience educating people, developing tools, building financial education systems, and helping individuals better understand the information in front of them.
-              </p>
-              <p className="text-lg text-primary/70 mt-6 max-w-4xl mx-auto leading-relaxed">
-                Through Ali Badi’s financial education ecosystem, software platforms, community education, and training resources, thousands of individuals have already been reached with tools and education designed to help them better understand credit, financial literacy, and financial readiness.
+                Spartan Warrior Foundation is built around real people who need access to education, tools, and structure. Many people are not looking for someone to do the work for them. They are looking for a place to learn, understand, and take the next step with more confidence.
               </p>
             </FadeIn>
           </div>
 
-          <FadeIn delay={0.2} className="bg-primary rounded-[2.5rem] p-10 md:p-16 shadow-premium relative overflow-hidden mb-16">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/20 rounded-full blur-[80px]"></div>
-            <div className="relative z-10">
-              <h3 className="text-2xl md:text-3xl font-bold text-white text-center mb-12">Impact Snapshot</h3>
-              
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">10,000+</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">Individuals Reached</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">7,000+</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">Served Through Educational Programs</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">440</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">Active Community Members</div>
-                </div>
-                <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
-                  <div className="text-4xl md:text-5xl font-bold text-accent mb-2">11,000+</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">YouTube Subscribers</div>
-                </div>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <FadeIn delay={0.1} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“I did not understand what I was looking at on my credit report. I knew I wanted to improve my situation, but I did not know where to start. Having access to education and tools helped me understand the information in front of me and gave me a place to begin.”</p>
               </div>
-
-              <div className="mt-8 bg-white/5 border border-white/10 rounded-2xl p-6 text-center max-w-2xl mx-auto">
-                  <div className="text-xl md:text-2xl font-bold text-accent mb-2">Weekly Free Live Mastermind</div>
-                  <div className="text-white/80 font-medium text-sm md:text-base">Every Week, No Cost, Open to the Public</div>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </FadeIn>
+            
+            <FadeIn delay={0.2} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“The biggest difference was learning that I had to take ownership. Nobody was promising to fix anything for me. I was given tools, education, and direction, but I had to show up and do the work.”</p>
               </div>
-            </div>
-          </FadeIn>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </FadeIn>
 
-          <FadeIn delay={0.4} className="max-w-4xl mx-auto bg-gray-50 p-8 md:p-12 rounded-3xl border border-gray-100 text-center">
-            <h3 className="text-2xl font-bold text-primary mb-6">Why This Matters</h3>
-            <div className="space-y-4 text-lg text-primary/80">
-              <p>These numbers show that the mission behind Spartan Warrior Foundation is not new.</p>
-              <p>The foundation is being created to expand access to the same type of education, tools, and structure for people who may not be able to afford them on their own.</p>
-              <p className="font-bold text-primary">The goal is to take what has already reached thousands and make it accessible to individuals who need education, guidance, and tools but may not have the financial ability to access them privately.</p>
-            </div>
+            <FadeIn delay={0.3} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+              <div>
+                <div className="text-accent mb-6"><svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg></div>
+                <p className="text-primary/80 text-lg leading-relaxed mb-8">“Before getting access to this type of education, I was guessing. I did not understand what lenders may review or how my financial profile could affect my options. The education helped me slow down, get organized, and start learning the system.”</p>
+              </div>
+              <p className="font-bold text-primary">— Program Participant</p>
+            </FadeIn>
+          </div>
+
+          <FadeIn delay={0.4} className="max-w-4xl mx-auto text-center">
+            <p className="text-sm text-primary/60 italic leading-relaxed">
+              Participant stories are shared for educational and community impact purposes only. Individual experiences may vary. Spartan Warrior Foundation does not guarantee credit score increases, approvals, deletions, funding, loans, or specific financial outcomes.
+            </p>
           </FadeIn>
         </div>
       </section>
